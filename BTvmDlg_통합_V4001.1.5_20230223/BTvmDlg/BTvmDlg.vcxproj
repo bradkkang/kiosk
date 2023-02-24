@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E0F2CAB-A605-4A23-9447-84C290F69104}</ProjectGuid>
+    <RootNamespace>BTvmDlg</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>BTvmDlg_통합</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>ATEC_KIOSK</TargetName>
+    <IncludePath>D:\Program Files %28x86%29\Visual Leak Detector\include;C:\TmaxSoft\tmax\tuxinc;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;C:\TmaxSoft\tmax\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>C:\TmaxSoft\tmax\lib;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>ATEC_KIOSK</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Include;.\TMAX;</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>c:\TmaxSoft\tmax\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;.\Lib\NhCmmn.lib;.\Lib\WOMRDll.lib;.\Lib\WNScanDll_A6.lib;.\Lib\sqlite3.lib;tmax4gl.lib;tmax.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Include;.\TMAX;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>d:\TmaxSoft\tmax\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>.\Lib\NhCmmn.lib;.\Lib\WOMRDll.lib;.\Lib\sqlite3.lib;tmax4gl.lib;tmax.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\BTvmDlg.ico" />
+    <None Include="res\BTvmDlg.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BTvmDlg.h" />
+    <ClInclude Include="BTvmDlgDlg.h" />
+    <ClInclude Include="cmn_util.h" />
+    <ClInclude Include="damo_ktc.h" />
+    <ClInclude Include="data_main.h" />
+    <ClInclude Include="DbSqlite.h" />
+    <ClInclude Include="dev_bill_ict.h" />
+    <ClInclude Include="dev_bill_main.h" />
+    <ClInclude Include="dev_bill_mei.h" />
+    <ClInclude Include="dev_bill_onep.h" />
+    <ClInclude Include="dev_cardreader_kicc.h" />
+    <ClInclude Include="dev_cardreader_main.h" />
+    <ClInclude Include="dev_coin_main.h" />
+    <ClInclude Include="dev_coin_ws.h" />
+    <ClInclude Include="dev_dispenser_ht.h" />
+    <ClInclude Include="dev_dispenser_main.h" />
+    <ClInclude Include="dev_dispenser_nht.h" />
+    <ClInclude Include="dev_prt_hs.h" />
+    <ClInclude Include="dev_prt_main.h" />
+    <ClInclude Include="dev_prt_nice_rxd.h" />
+    <ClInclude Include="dev_prt_ticket_hs.h" />
+    <ClInclude Include="dev_prt_ticket_main.h" />
+    <ClInclude Include="dev_prt_ticket_nhs.h" />
+    <ClInclude Include="dev_scanner_atec.h" />
+    <ClInclude Include="dev_scanner_main.h" />
+    <ClInclude Include="dev_scanner_wt.h" />
+    <ClInclude Include="dev_tr_cc_cardcash.h" />
+    <ClInclude Include="dev_tr_kobus_mem.h" />
+    <ClInclude Include="dev_tr_main.h" />
+    <ClInclude Include="dev_tr_mem.h" />
+    <ClInclude Include="dev_tr_tmexp_mem.h" />
+    <ClInclude Include="dev_ui_main.h" />
+    <ClInclude Include="event_if.h" />
+    <ClInclude Include="File_Env_ini.h" />
+    <ClInclude Include="Include\AtecScanLib.h" />
+    <ClInclude Include="Include\BmpStruct.h" />
+    <ClInclude Include="Include\MyDatamng.h" />
+    <ClInclude Include="Include\MyDataTr.h" />
+    <ClInclude Include="Include\MyEvent.h" />
+    <ClInclude Include="Include\MyFileUtil.h" />
+    <ClInclude Include="Include\MyLogFile.h" />
+    <ClInclude Include="Include\MySerial.h" />
+    <ClInclude Include="Include\MySocket.h" />
+    <ClInclude Include="Include\MyUtil.h" />
+    <ClInclude Include="Include\WBarcodeDll.h" />
+    <ClInclude Include="Include\WOMRDll.h" />
+    <ClInclude Include="Include\wscanlib_SSTA6.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="MyDataAccum.h" />
+    <ClInclude Include="MyDefine.h" />
+    <ClInclude Include="oper_config.h" />
+    <ClInclude Include="oper_kos_file.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="sqlite3i.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="svr_ccbus.h" />
+    <ClInclude Include="svr_ccbus_st.h" />
+    <ClInclude Include="svr_ccs_main.h" />
+    <ClInclude Include="svr_kobus.h" />
+    <ClInclude Include="svr_kobus_st.h" />
+    <ClInclude Include="svr_ko_main.h" />
+    <ClInclude Include="svr_main.h" />
+    <ClInclude Include="svr_tm_expbus.h" />
+    <ClInclude Include="svr_tm_expbus_st.h" />
+    <ClInclude Include="svr_tm_exp_main.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="xtzbus_tm_fdl_108.h" />
+    <ClInclude Include="xtz_kobus_fdl.h" />
+    <ClInclude Include="xzzbus_fdl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BTvmDlg.cpp" />
+    <ClCompile Include="BTvmDlgDlg.cpp" />
+    <ClCompile Include="cmn_util.cpp" />
+    <ClCompile Include="damo_ktc.cpp" />
+    <ClCompile Include="data_main.cpp" />
+    <ClCompile Include="DbSqlite.cpp" />
+    <ClCompile Include="dev_bill_ict.cpp" />
+    <ClCompile Include="dev_bill_main.cpp" />
+    <ClCompile Include="dev_bill_mei.cpp" />
+    <ClCompile Include="dev_bill_onep.cpp" />
+    <ClCompile Include="dev_cardreader_kicc.cpp" />
+    <ClCompile Include="dev_cardreader_main.cpp" />
+    <ClCompile Include="dev_coin_main.cpp" />
+    <ClCompile Include="dev_coin_ws.cpp" />
+    <ClCompile Include="dev_dispenser_ht.cpp" />
+    <ClCompile Include="dev_dispenser_main.cpp" />
+    <ClCompile Include="dev_dispenser_nht.cpp" />
+    <ClCompile Include="dev_prt_hs.cpp" />
+    <ClCompile Include="dev_prt_main.cpp" />
+    <ClCompile Include="dev_prt_nice_rxd.cpp" />
+    <ClCompile Include="dev_prt_ticket_hs.cpp" />
+    <ClCompile Include="dev_prt_ticket_main.cpp" />
+    <ClCompile Include="dev_prt_ticket_nhs.cpp" />
+    <ClCompile Include="dev_scanner_atec.cpp" />
+    <ClCompile Include="dev_scanner_main.cpp" />
+    <ClCompile Include="dev_scanner_wt.cpp" />
+    <ClCompile Include="dev_tr_cc_cardcash.cpp" />
+    <ClCompile Include="dev_tr_kobus_mem.cpp" />
+    <ClCompile Include="dev_tr_main.cpp" />
+    <ClCompile Include="dev_tr_mem.cpp" />
+    <ClCompile Include="dev_tr_tmexp_mem.cpp" />
+    <ClCompile Include="dev_ui_main.cpp" />
+    <ClCompile Include="event_if.cpp" />
+    <ClCompile Include="File_Env_ini.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="MyDataAccum.cpp" />
+    <ClCompile Include="oper_config.cpp" />
+    <ClCompile Include="oper_kos_file.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="svr_ccbus.cpp" />
+    <ClCompile Include="svr_ccs_main.cpp" />
+    <ClCompile Include="svr_kobus.cpp" />
+    <ClCompile Include="svr_ko_main.cpp" />
+    <ClCompile Include="svr_main.cpp" />
+    <ClCompile Include="svr_tm_expbus.cpp" />
+    <ClCompile Include="svr_tm_exp_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BTvmDlg.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BTvmDlg.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,390 @@
+#
+#	common field
+#
+# name      	number  type    flags   comments
+*base 16000001
+TIP_OPERATION	0	string
+TIP_SEGMENT	1	string
+TIP_SECTION	2	string
+TIP_NODE	3	string
+TIP_OCCURS	4	int
+TIP_FLAGS	5	int
+TIP_CURSOR	6	string
+TIP_SESTM	7	int
+TIP_ERROR	8	int
+TIP_STATE	9	int
+TIP_MORE	10	int
+TIP_BADFIELD	11	string
+TIP_CMD		12	string
+TIP_CLID	13	int
+TIP_MSG		14	string
+
+#
+#	DOMAIN section fields
+#
+# name      		number  type    flags   comments
+*base 16000100
+TIP_NAME		0	string
+TIP_SHMKEY		1	int
+TIP_MINCLH		2	int
+TIP_MAXCLH		3	int
+TIP_MAXUSER		4	int
+TIP_TPORTNO		5	int
+TIP_RACPORT		6	int
+TIP_MAXSACALL		7	int
+TIP_MAXCACALL		8	int
+TIP_MAXCONV_NODE	9	int
+TIP_MAXCONV_SERVER	10	int
+TIP_CMTRET		11	int
+TIP_BLOCKTIME		12	int
+TIP_TXTIME		13	int
+TIP_IDLETIME		14	int
+TIP_CLICHKINT		15	int
+TIP_NLIVEINQ		16	int
+TIP_SECURITY		17	string
+TIP_OWNER		18	string
+TIP_CPC			19	int
+#TIP_LOGINSVC		20	string
+#TIP_LOGOUTSVC		21	string
+TIP_NCLHCHKTIME		22	int
+TIP_DOMAINID		23	int
+TIP_IPCPERM		24	int
+TIP_MAXNODE		25	int
+TIP_MAXSVG		26	int
+TIP_MAXSVR		27	int
+TIP_MAXSVC		28	int
+TIP_MAXSPR		29	int
+TIP_MAXTMS		30	int
+TIP_MAXCPC		31	int
+TIP_MAXROUT		32	int
+TIP_MAXROUTSVG		33	int
+TIP_MAXRQ		34	int
+TIP_MAXGW		35	int
+TIP_MAXCOUSIN		36	int
+TIP_MAXCOUSINSVG	37	int
+TIP_MAXBACKUP		38	int
+TIP_MAXBACKUPSVG	39	int
+TIP_MAXTOTALSVG		40	int
+TIP_MAXPROD		41	int
+TIP_MAXFUNC		42	int
+TIP_TXPENDINGTIME	43	int
+TIP_NO			44	int
+TIP_TIPSVC		45	string
+TIP_NODECOUNT		46	int
+TIP_SVGCOUNT		47	int
+TIP_SVRCOUNT		48	int
+TIP_SVCCOUNT		49	int
+TIP_COUSIN_COUNT		50	int
+TIP_BACKUP_COUNT		51	int
+TIP_ROUT_COUNT		52	int
+TIP_STYPE		53	string
+TIP_VERSION		54	string
+TIP_EXPDATE		55	string
+TIP_DOMAINCOUNT		56	int
+TIP_RSVG_GCOUNT		57	int
+TIP_RSVG_COUNT		58	int
+TIP_CSVG_GCOUNT		59	int
+TIP_CSVG_COUNT		60	int
+TIP_BSVG_GCOUNT		61	int
+TIP_BSVG_COUNT		62	int
+TIP_PROD_COUNT		63	int
+TIP_FUNC_COUNT		64	int
+TIP_SHMSIZE		65	int
+TIP_CRYPT		66	string
+TIP_DOMAIN_TMMLOGLVL	67	string
+TIP_DOMAIN_CLHLOGLVL	68	string
+TIP_DOMAIN_TMSLOGLVL	69	string
+TIP_DOMAIN_LOGLVL	70	string
+TIP_DOMAIN_MAXTHREAD	71	int
+
+#
+#	NODE section fields
+#
+# name   	number  type    flags   comments
+*base 16000200
+#TIP_NAME	0	string
+TIP_DOMAINNAME	1	string
+#TIP_SHMKEY	2	int
+#TIP_MINCLH	3	int
+#TIP_MAXCLH	4	int
+TIP_CLHQTIMEOUT	5	int
+#TIP_IDLETIME	6	int
+#TIP_CLICHKINT	7	int
+#TIP_TPORTNO	8	int
+#TIP_TPORTNO2	9	int
+#TIP_TPORTNO3	10	int
+#TIP_TPORTNO4	11	int
+#TIP_TPORTNO5	12	int
+#TIP_RACPORT	13	int
+#TIP_TMAXPORT	14	string
+TIP_CMPRPORT	15	string
+TIP_CMPRSIZE	16	int
+#TIP_MAXUSER	17	int
+TIP_TMAXDIR	18	string
+TIP_TMAXHOME	19	string
+TIP_APPDIR	20	string
+TIP_PATHDIR	21	string
+TIP_TLOGDIR	22	string
+TIP_SLOGDIR	23	string
+TIP_ULOGDIR	24	string
+TIP_ENVFILE	25	string
+#TIP_LOGINSVC	26	string
+#TIP_LOGOUTSVC	27	string
+TIP_IP		28	string
+#TIP_PEER	29	string
+TIP_TMMOPT	30	string
+TIP_CLHOPT	31	string
+#TIP_IPCPERM	32	int
+#TIP_MAXSVG	33	int
+#TIP_MAXSVR	34	int
+#TIP_MAXSPR	35	int
+#TIP_MAXTMS	36	int
+#TIP_MAXCPC	37	int
+TIP_MAXGWSVR	38	int
+TIP_MAXRQSVR	39	int
+TIP_MAXGWCPC	40	int
+TIP_MAXRQCPC	41	int
+TIP_CPORTNO	42	int
+TIP_REALSVR	43	string
+TIP_RSCPC	44	int
+TIP_AUTOBACKUP	45	int
+TIP_HOSTNAME	46	string
+TIP_NODETYPE	47	int
+TIP_CPU		48	int
+#TIP_MAXRSTART	49	int
+#TIP_GPERIOD	50	int
+#TIP_RESTART	51	int
+TIP_CURCLH	49	int
+TIP_LIVECTIME	50	string
+TIP_NODE_TMMLOGLVL	51	string
+TIP_NODE_CLHLOGLVL	52	string
+TIP_NODE_TMSLOGLVL	53	string
+TIP_NODE_LOGLVL		54	string
+TIP_NODE_MAXTHREAD	55	int
+TIP_EXTPORT		56	int 
+TIP_EXTCLHPORT		57	int
+
+
+#
+#	SVRGROUP section fields
+#
+# name   	number  type    flags   comments
+*base 16000300
+#TIP_NAME	0	string
+#TIP_NODENAME	1	string
+TIP_SVGTYPE	2	string
+#TIP_PRODNAME	3	string
+TIP_COUSIN	4	string
+TIP_BACKUP	5	string
+TIP_LOAD	6	int
+#TIP_APPDIR	7	string
+#TIP_ULOGDIR	8	string
+TIP_DBNAME	9	string
+TIP_OPENINFO	10	string
+TIP_CLOSEINFO	11	string
+TIP_MINTMS	12	int
+#TIP_MAXTMS	13	int
+TIP_TMSNAME	14	string
+#TIP_SECURITY	15	string
+#TIP_OWNER	16	string
+#TIP_ENVFILE	17	string
+#TIP_CPC		18	int
+TIP_XAOPTION		19	string
+TIP_SVG_TMSTYPE		20	string
+TIP_SVG_TMSOPT		21	string
+TIP_SVG_TMSTHREADS	22	int
+TIP_SVG_TMSLOGLVL	23	string
+TIP_SVG_LOGLVL		24	string
+TIP_NODENAME		25	string
+
+#
+#	SERVER section fields
+#
+# name   	number  type    flags   comments
+*base 16000350
+#TIP_NAME	0	string
+TIP_SVGNAME	1	string
+#TIP_NODENAME	2	string
+TIP_CLOPT	3	string
+TIP_SEQ		4	int
+TIP_MIN		5	int
+TIP_MAX		6	int
+#TIP_ULOGDIR	7	string
+TIP_CONV	8	int
+TIP_MAXQCOUNT	9	int
+TIP_ASQCOUNT	10	int
+TIP_MAXRSTART	11	int
+TIP_GPERIOD	12	int
+TIP_RESTART	13	int
+TIP_SVRTYPE	14	string
+#TIP_CPC		15	int
+TIP_SCHEDULE	16	int
+#TIP_MINTHR	17	int
+#TIP_MAXTHR	18	int
+TIP_TARGET	19	string
+TIP_DEPEND	20	string
+TIP_CASCADE	21	int
+TIP_PROCNAME	22	string
+TIP_LIFESPAN	23	string
+TIP_DDRI	24	string
+TIP_CURSVR	25	int
+TIP_SVGNO	26	int
+TIP_SVR_LOGLVL	27	string
+
+
+#
+#	SERVICE section fields
+#
+# name   	number  type    flags   comments
+*base 16000400
+#TIP_NAME	0	string
+TIP_SVRNAME	1	string
+TIP_PRI		2	int
+TIP_SVCTIME	3	int
+TIP_ROUTING	4	string
+TIP_EXPORT	5	int
+TIP_AUTOTRAN	6	int
+
+#
+#	ROUTING section fields
+#
+# name   	number  type    flags   comments
+*base 16000425
+#TIP_NAME	0	string
+TIP_FLDTYPE	1	string
+TIP_RANGES	2	string
+TIP_SUBTYPE	3	string
+TIP_ELEMENT	4	string
+TIP_BUFTYPE	5	string
+TIP_OFFSET	6	int
+TIP_FLDLEN	7	int
+#TIP_FLDOFFSET	8	int
+
+
+#
+#	RQ section fields
+#
+# name   	number  type    flags   comments
+*base 16000450
+#TIP_NAME	0	string
+#TIP_SVGNAME	1	string
+TIP_PRESVC	2	string
+TIP_QSIZE	3	int
+TIP_FILEPATH	4	string
+TIP_BOOT	5	string
+TIP_FSYNC	6	int
+TIP_BUFFERING	7	int
+#TIP_ENQSVC	8	int
+#TIP_FAILINTERVAL 9	int
+#TIP_FAILRETRY	10	int
+#TIP_FAILSVC	11	string
+#TIP_AFTERSVC	12	string
+
+
+#
+#	GATEWAY section fields
+#
+# name   		number  type    flags   comments
+*base 16000500
+#TIP_NAME		0	string
+TIP_GWTYPE		1	string
+TIP_PORTNO		2	int
+#TIP_CPC			3	int
+TIP_RGWADDR		4	string
+TIP_RGWPORTNO		5	int
+#TIP_BACKUP		6	string
+#TIP_NODENAME		7	string
+TIP_KEY			8	string
+TIP_BACKUP_RGWADDR	9	string
+TIP_BACKUP_RGWPORTNO	10	int
+TIP_TIMEOUT		11	int
+TIP_DIRECTION		12	string
+TIP_MAXINRGW		13	int
+TIP_GWOWNER		15	string
+TIP_RGWOWNER		16	string
+TIP_RGWPASSWD		17	string
+TIP_PTIMEOUT		18	int
+TIP_PTIMEINT		19	int
+
+#
+#	FUNCTION section fields
+#
+# name   	number  type    flags   comments
+*base 16000550
+#TIP_NAME	0	string
+#TIP_SVRNAME	1	string
+TIP_FQSTART	2	int
+TIP_FQEND	3	int
+TIP_ENTRY	4	string
+
+
+#
+#	STATISTICS segment fields
+#
+# name   	number  type    flags   comments
+*base 16000600
+#TIP_NAME	0	string
+TIP_STATUS	1	string
+TIP_STIME	2	string
+TIP_TTIME	3	int
+TIP_SVC_STIME	4	int
+TIP_COUNT	5	int
+#TIP_NO		6	int
+TIP_NUM_FREE	7	int
+TIP_NUM_REPLY	8	int
+TIP_NUM_FAIL	9	int
+TIP_NUM_REQ	10	int
+TIP_ENQ_REQS	11	int
+TIP_DEQ_REQS	12	int
+TIP_ENQ_REPLYS	13	int
+TIP_DEQ_REPLYS	14	int
+TIP_CLHNO	15	int
+TIP_SVR_NAME	16	string
+TIP_SVC_NAME	17	string
+TIP_AVERAGE	18	float
+TIP_QCOUNT	19	int
+TIP_CQCOUNT	20	int
+TIP_QAVERAGE	21	float
+TIP_MINTIME	22	float
+TIP_MAXTIME	23	float
+TIP_FAIL_COUNT	24	int
+TIP_ERROR_COUNT	25	int
+TIP_PID		26	int
+TIP_TOTAL_COUNT	27	int
+TIP_TOTAL_SVCFAIL_COUNT	28	int
+TIP_TOTAL_ERROR_COUNT	29	int
+TIP_TOTAL_AVG	30	float
+TIP_TOTAL_RUNNING_COUNT	31	int
+TIP_TMS_NAME	32	string
+TIP_SVG_NAME	33	string
+TIP_SPRI	34	int
+TIP_TI_THRI	35	int
+TIP_TI_AVG	36	float
+TIP_TI_XID	37	string
+TIP_TI_XA_STATUS	38	string
+TIP_GW_NAME	39	string
+TIP_GW_NO	40	int
+TIP_GW_HOSTN	41	string
+TIP_GW_CTYPE	42	string
+TIP_GW_CTYPE2	43	string
+TIP_GW_IPADDR	44	string
+TIP_GW_PORT	45	int
+TIP_GW_STATUS	46	string
+
+#
+#	ADMIN segment fields
+#
+# name   	number  type    flags   comments
+*base 16000650
+TIP_IPADDR	0	string
+TIP_USRNAME	1	string
+TIP_MODULE	2	int
+TIP_LOGLVL	3	string
+TIP_SPEC	4	string
+
+#
+#	EXTRA flag fields
+#
+# name   	number  type    flags   comments
+*base 16000700
+TIP_EXTRA_OPTION	0	int

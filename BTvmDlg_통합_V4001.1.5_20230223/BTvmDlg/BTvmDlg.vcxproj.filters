@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="device">
+      <UniqueIdentifier>{fc6dcbf6-d255-47bb-bbad-dff8789148b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo">
+      <UniqueIdentifier>{0ad8794c-fc21-4b43-903b-8c52ebf70679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{259a4ceb-55b8-4201-9ff6-c3eaf84f22b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{6fb6434c-1fd9-47f9-b7ce-c90f4ecf6acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{2f1b6ad7-9aa2-4757-bcd1-d78103b2f9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\inc">
+      <UniqueIdentifier>{41bc7ccd-2528-4dbd-9169-14a5e8962f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\시외">
+      <UniqueIdentifier>{fff6f8af-2d92-4a8d-80f0-46472e35ab7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\코버스">
+      <UniqueIdentifier>{9c5bb8d7-e5cf-4036-b3cf-916fbdbb851e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\UI">
+      <UniqueIdentifier>{82da8972-eee6-45d5-8236-2bd7a16358f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\영수증프린터">
+      <UniqueIdentifier>{c24dcea1-b41e-4e9e-8164-80a1b28e6e96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\지폐인식기">
+      <UniqueIdentifier>{2175be81-9ca8-4ab6-b73f-9738f9b07ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\지폐방출기">
+      <UniqueIdentifier>{5f78a85f-8d67-4431-91ab-f96545feac37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\승차권스캐너">
+      <UniqueIdentifier>{11f4a618-c62b-4637-90aa-360b9b66adb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\승차권프린터">
+      <UniqueIdentifier>{7a6bc4ff-80e9-4dc3-8ba0-7387bd1c0bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\동전방출기">
+      <UniqueIdentifier>{bdb16526-a3b7-4edd-9787-bc5f52bef110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\카드리더기">
+      <UniqueIdentifier>{f1e48fc3-03c0-4498-a5df-dc20cb81e40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device\ftp">
+      <UniqueIdentifier>{016909e8-88df-4a58-8252-e356fc655fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="공통">
+      <UniqueIdentifier>{3ee2fa93-fca3-4cc7-847d-c2712792cd8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{b367daea-dd77-464e-82be-c5ee5bde27bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tr">
+      <UniqueIdentifier>{c6df8d35-25c9-490e-9664-8f0de973ae66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server\티머니고속">
+      <UniqueIdentifier>{a7fc025c-ab55-4340-822e-b3e20d5b76f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem\시외">
+      <UniqueIdentifier>{5120095b-dd4d-49c7-8851-28893812d3e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem\티머니고속">
+      <UniqueIdentifier>{0407c096-6cac-47ce-8a4e-9636b8518e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem\코버스">
+      <UniqueIdentifier>{c460d5cb-7b01-4bdf-b0bd-d155a8061bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo\data">
+      <UniqueIdentifier>{03cdcee8-c3ee-4078-b964-ee0704a5868c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo\data\INI">
+      <UniqueIdentifier>{f4674a5d-d09e-4c3f-bf9e-98e7c187f511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo\data\Config">
+      <UniqueIdentifier>{cae3b091-0d94-455f-9183-9897be693a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo\data\Accum">
+      <UniqueIdentifier>{bae65748-d244-4967-87c9-4a828acbfb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo\data\관제">
+      <UniqueIdentifier>{9d08f5ed-43b4-4fd6-8a25-2e0881ce2b5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="damo\data\OP파일">
+      <UniqueIdentifier>{768d5365-5a5c-48cd-b843-70963b2a7425}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\BTvmDlg.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\BTvmDlg.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BTvmDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BTvmDlgDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="damo_ktc.h">
+      <Filter>damo</Filter>
+    </ClInclude>
+    <ClInclude Include="event_if.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDefine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>damo</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3i.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="DbSqlite.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MyDatamng.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MyDataTr.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MyEvent.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MyFileUtil.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MyLogFile.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MySerial.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MySocket.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MyUtil.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\WBarcodeDll.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\wscanlib_SSTA6.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\AtecScanLib.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BmpStruct.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_main.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_ccbus_st.h">
+      <Filter>server\시외</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_ccbus.h">
+      <Filter>server\시외</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_ccs_main.h">
+      <Filter>server\시외</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_kobus.h">
+      <Filter>server\코버스</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_kobus_st.h">
+      <Filter>server\코버스</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_ko_main.h">
+      <Filter>server\코버스</Filter>
+    </ClInclude>
+    <ClInclude Include="xzzbus_fdl.h">
+      <Filter>server\시외</Filter>
+    </ClInclude>
+    <ClInclude Include="File_Env_ini.h">
+      <Filter>damo\data\INI</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_tr_kobus_mem.h">
+      <Filter>mem\코버스</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_tr_mem.h">
+      <Filter>mem\시외</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_ui_main.h">
+      <Filter>device\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\WOMRDll.h">
+      <Filter>헤더 파일\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_prt_main.h">
+      <Filter>device\영수증프린터</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_prt_hs.h">
+      <Filter>device\영수증프린터</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_prt_nice_rxd.h">
+      <Filter>device\영수증프린터</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_bill_mei.h">
+      <Filter>device\지폐인식기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_bill_ict.h">
+      <Filter>device\지폐인식기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_bill_main.h">
+      <Filter>device\지폐인식기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_dispenser_ht.h">
+      <Filter>device\지폐방출기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_dispenser_main.h">
+      <Filter>device\지폐방출기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_scanner_wt.h">
+      <Filter>device\승차권스캐너</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_scanner_main.h">
+      <Filter>device\승차권스캐너</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_prt_ticket_hs.h">
+      <Filter>device\승차권프린터</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_prt_ticket_main.h">
+      <Filter>device\승차권프린터</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_coin_ws.h">
+      <Filter>device\동전방출기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_coin_main.h">
+      <Filter>device\동전방출기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_cardreader_main.h">
+      <Filter>device\카드리더기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_cardreader_kicc.h">
+      <Filter>device\카드리더기</Filter>
+    </ClInclude>
+    <ClInclude Include="oper_config.h">
+      <Filter>damo\data\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDataAccum.h">
+      <Filter>damo\data\Accum</Filter>
+    </ClInclude>
+    <ClInclude Include="data_main.h">
+      <Filter>damo\data\관제</Filter>
+    </ClInclude>
+    <ClInclude Include="oper_kos_file.h">
+      <Filter>damo\data\OP파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_bill_onep.h">
+      <Filter>device\지폐인식기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_dispenser_nht.h">
+      <Filter>device\지폐방출기</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_prt_ticket_nhs.h">
+      <Filter>device\승차권프린터</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_tm_expbus.h">
+      <Filter>server\티머니고속</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_tm_expbus_st.h">
+      <Filter>server\티머니고속</Filter>
+    </ClInclude>
+    <ClInclude Include="svr_tm_exp_main.h">
+      <Filter>server\티머니고속</Filter>
+    </ClInclude>
+    <ClInclude Include="cmn_util.h">
+      <Filter>공통</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_tr_tmexp_mem.h">
+      <Filter>mem\티머니고속</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_tr_cc_cardcash.h">
+      <Filter>tr</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_tr_main.h">
+      <Filter>tr</Filter>
+    </ClInclude>
+    <ClInclude Include="xtzbus_tm_fdl_108.h">
+      <Filter>server\티머니고속</Filter>
+    </ClInclude>
+    <ClInclude Include="dev_scanner_atec.h">
+      <Filter>device\승차권스캐너</Filter>
+    </ClInclude>
+    <ClInclude Include="xtz_kobus_fdl.h">
+      <Filter>server\코버스</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BTvmDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BTvmDlgDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="damo_ktc.cpp">
+      <Filter>damo</Filter>
+    </ClCompile>
+    <ClCompile Include="event_if.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>damo</Filter>
+    </ClCompile>
+    <ClCompile Include="DbSqlite.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_main.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_ccbus.cpp">
+      <Filter>server\시외</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_ccs_main.cpp">
+      <Filter>server\시외</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_kobus.cpp">
+      <Filter>server\코버스</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_ko_main.cpp">
+      <Filter>server\코버스</Filter>
+    </ClCompile>
+    <ClCompile Include="File_Env_ini.cpp">
+      <Filter>damo\data\INI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_tr_kobus_mem.cpp">
+      <Filter>mem\코버스</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_tr_mem.cpp">
+      <Filter>mem\시외</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_ui_main.cpp">
+      <Filter>device\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_prt_main.cpp">
+      <Filter>device\영수증프린터</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_prt_hs.cpp">
+      <Filter>device\영수증프린터</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_prt_nice_rxd.cpp">
+      <Filter>device\영수증프린터</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_bill_mei.cpp">
+      <Filter>device\지폐인식기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_bill_ict.cpp">
+      <Filter>device\지폐인식기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_bill_main.cpp">
+      <Filter>device\지폐인식기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_dispenser_ht.cpp">
+      <Filter>device\지폐방출기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_dispenser_main.cpp">
+      <Filter>device\지폐방출기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_scanner_wt.cpp">
+      <Filter>device\승차권스캐너</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_scanner_main.cpp">
+      <Filter>device\승차권스캐너</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_prt_ticket_hs.cpp">
+      <Filter>device\승차권프린터</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_prt_ticket_main.cpp">
+      <Filter>device\승차권프린터</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_coin_ws.cpp">
+      <Filter>device\동전방출기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_coin_main.cpp">
+      <Filter>device\동전방출기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_cardreader_kicc.cpp">
+      <Filter>device\카드리더기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_cardreader_main.cpp">
+      <Filter>device\카드리더기</Filter>
+    </ClCompile>
+    <ClCompile Include="oper_config.cpp">
+      <Filter>damo\data\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDataAccum.cpp">
+      <Filter>damo\data\Accum</Filter>
+    </ClCompile>
+    <ClCompile Include="data_main.cpp">
+      <Filter>damo\data\관제</Filter>
+    </ClCompile>
+    <ClCompile Include="oper_kos_file.cpp">
+      <Filter>damo\data\OP파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_bill_onep.cpp">
+      <Filter>device\지폐인식기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_dispenser_nht.cpp">
+      <Filter>device\지폐방출기</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_prt_ticket_nhs.cpp">
+      <Filter>device\승차권프린터</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_tm_expbus.cpp">
+      <Filter>server\티머니고속</Filter>
+    </ClCompile>
+    <ClCompile Include="svr_tm_exp_main.cpp">
+      <Filter>server\티머니고속</Filter>
+    </ClCompile>
+    <ClCompile Include="cmn_util.cpp">
+      <Filter>공통</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_tr_tmexp_mem.cpp">
+      <Filter>mem\티머니고속</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_tr_cc_cardcash.cpp">
+      <Filter>tr</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_tr_main.cpp">
+      <Filter>tr</Filter>
+    </ClCompile>
+    <ClCompile Include="dev_scanner_atec.cpp">
+      <Filter>device\승차권스캐너</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BTvmDlg.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,264 @@
+// 
+// 
+// event_if.h : Event 헤더 파일
+//
+
+#pragma once
+
+#include "MyLogFile.h"
+
+//----------------------------------------------------------------------------------------------------------------------
+
+enum EventCodes	
+{
+	EC_IN_SERVICE		= 0		,
+	EC_OUT_SERVICE				,
+
+	EC_MAINT_IN_SERVICE			,
+	EC_MAINT_OUT_SERVICE		,
+
+	EC_ADMIN_SERVICE_CLR,
+	EC_ADMIN_SERVICE,
+
+	EC_ADMIN_LOGOUT,
+	EC_ADMIN_LOGIN,
+
+	// 100원 동전 device
+	EC_COIN_100_NO_CLR,
+	EC_COIN_100_NO,
+
+	EC_COIN_100_SHORT_CLR,
+	EC_COIN_100_SHORT,
+
+	EC_COIN_100_MOTOR_ERR_CLR,
+	EC_COIN_100_MOTOR_ERR,
+
+	EC_COIN_100_PROTOCOL_ERR_CLR,
+	EC_COIN_100_PROTOCOL_ERR,
+
+	EC_COIN_100_OUT_ERR_CLR,
+	EC_COIN_100_OUT_ERR,
+
+	EC_COIN_100_ENABLE_ERR_CLR,
+	EC_COIN_100_ENABLE_ERR,
+
+	EC_COIN_100_NO_OUT_CLR,
+	EC_COIN_100_NO_OUT,
+	// 동전 100 통신에러 추가
+	EC_COIN_100_COMM_ERR_CLR,
+	EC_COIN_100_COMM_ERR,
+
+
+	// 500원 동전 device
+	EC_COIN_500_NO_CLR,
+	EC_COIN_500_NO,
+
+	EC_COIN_500_SHORT_CLR,
+	EC_COIN_500_SHORT,
+
+	EC_COIN_500_MOTOR_ERR_CLR,
+	EC_COIN_500_MOTOR_ERR,
+
+	EC_COIN_500_PROTOCOL_ERR_CLR,
+	EC_COIN_500_PROTOCOL_ERR,
+
+	EC_COIN_500_OUT_ERR_CLR,
+	EC_COIN_500_OUT_ERR,
+
+	EC_COIN_500_ENABLE_ERR_CLR,
+	EC_COIN_500_ENABLE_ERR,
+
+	EC_COIN_500_NO_OUT_CLR,
+	EC_COIN_500_NO_OUT,
+	// 동전 500 통신에러 추가
+	EC_COIN_500_COMM_ERR_CLR,
+	EC_COIN_500_COMM_ERR,
+
+	EC_COIN_NO_OUT_CLR,
+	EC_COIN_NO_OUT,
+
+	EC_COIN_NO_CHECK_CLR,
+	EC_COIN_NO_CHECK,
+
+	EC_FILE_ID_0100_ERR_CLR,
+	EC_FILE_ID_0100_ERR,
+
+	EC_IC_CARD_DETECT_CLR,
+	EC_IC_CARD_DETECT,
+
+	EC_IC_CARD_IN_CLR,
+	EC_IC_CARD_IN,
+
+	EC_TMAX_TEST_AUTH_ERR_CLR,
+	EC_TMAX_TEST_AUTH_ERR,
+
+	EC_TMAX_AUTH_ERR_CLR,
+	EC_TMAX_AUTH_ERR,
+
+	EC_TMAX_LOGIN_ERR_CLR,
+	EC_TMAX_LOGIN_ERR,
+
+	// 승차권 리더기
+	EC_TICKET_INSERT_CLR,
+	EC_TICKET_INSERT,
+
+	// 지폐방출기
+	EC_CDU_1K_SHORT_CLR,
+	EC_CDU_1K_SHORT,
+
+	EC_CDU_10K_SHORT_CLR,
+	EC_CDU_10K_SHORT,
+
+	EC_CDU_1K_NO_OUT_CLR,
+	EC_CDU_1K_NO_OUT,
+
+	EC_CDU_10K_NO_OUT_CLR,
+	EC_CDU_10K_NO_OUT,
+
+	EC_CDU_NO_OUT_CLR,
+	EC_CDU_NO_OUT,
+
+	EC_CDU_NO_CHECK_CLR,
+	EC_CDU_NO_CHECK,
+
+	EC_CDU_DEV_ERR_CLR,
+	EC_CDU_DEV_ERR,
+	// 방출기 통신에러 추가
+	EC_CDU_COMM_ERR_CLR,
+	EC_CDU_COMM_ERR,
+
+
+	// 지폐인식기
+	EC_BILL_COMM_ERR_CLR,
+	EC_BILL_COMM_ERR,
+
+	EC_BILL_JAM_CLR,
+	EC_BILL_JAM,
+
+	EC_BILL_STK_FULL_CLR,
+	EC_BILL_STK_FULL,
+
+	EC_BILL_STK_OUT_CLR,
+	EC_BILL_STK_OUT,
+
+	// Bill 
+	EC_BILL_SENSOR_ERR_CLR,
+	EC_BILL_SENSOR_ERR,
+
+
+
+	// 영수증프린터
+	EC_PRT_COMM_ERR_CLR,
+	EC_PRT_COMM_ERR,
+
+	EC_PRT_NO_PAPER_CLR,
+	EC_PRT_NO_PAPER,
+
+	EC_PRT_HEAD_UP_CLR,
+	EC_PRT_HEAD_UP,
+
+	EC_PRT_PAPER_JAM_CLR,
+	EC_PRT_PAPER_JAM,
+
+	EC_PRT_PAPER_NEAR_END_CLR,
+	EC_PRT_PAPER_NEAR_END,
+
+	EC_PRT_CUTTER_ERR_CLR,
+	EC_PRT_CUTTER_ERR,
+
+	EC_PRT_BM_ERR_CLR,
+	EC_PRT_BM_ERR,
+
+	EC_PRT_OUT_SENS_ERR_CLR,
+	EC_PRT_OUT_SENS_ERR,
+
+	// (감열지사용) 영수증프린터
+	EC_PRT_ROLL_COMM_ERR_CLR,
+	EC_PRT_ROLL_COMM_ERR,
+
+	EC_PRT_ROLL_NO_PAPER_CLR,
+	EC_PRT_ROLL_NO_PAPER,
+
+	EC_PRT_ROLL_HEAD_UP_CLR,
+	EC_PRT_ROLL_HEAD_UP,
+
+	EC_PRT_ROLL_PAPER_JAM_CLR,
+	EC_PRT_ROLL_PAPER_JAM,
+
+	EC_PRT_ROLL_PAPER_NEAR_END_CLR,
+	EC_PRT_ROLL_PAPER_NEAR_END,
+
+	EC_PRT_ROLL_CUTTER_ERR_CLR,
+	EC_PRT_ROLL_CUTTER_ERR,
+
+	EC_PRT_ROLL_BM_ERR_CLR,
+	EC_PRT_ROLL_BM_ERR,
+
+	EC_PRT_ROLL_OUT_SENS_ERR_CLR,
+	EC_PRT_ROLL_OUT_SENS_ERR,
+
+
+	// 승차권 프린터
+	EC_TCKPRT_COMM_ERR_CLR,
+	EC_TCKPRT_COMM_ERR,
+
+	EC_TCKPRT_NO_PAPER_CLR,
+	EC_TCKPRT_NO_PAPER,
+
+	EC_TCKPRT_HEAD_UP_CLR,
+	EC_TCKPRT_HEAD_UP,
+
+	EC_TCKPRT_PAPER_JAM_CLR,
+	EC_TCKPRT_PAPER_JAM,
+
+	EC_TCKPRT_PAPER_NEAR_END_CLR,
+	EC_TCKPRT_PAPER_NEAR_END,
+
+	EC_TCKPRT_CUTTER_ERR_CLR,
+	EC_TCKPRT_CUTTER_ERR,
+
+	// 승차권 수량
+	EC_TICKET_SHORT_CLR,
+	EC_TICKET_SHORT,
+
+	EC_JOB_CLOSE_CLR,
+	EC_JOB_CLOSE,
+
+	EC_OP_CLOSE_CLR,
+	EC_OP_CLOSE,
+
+	EC_RF_PAYMENT_CLR,
+	EC_RF_PAYMENT_ERR,
+
+	EC_SCAN_COMM_ERR_CLR,
+	EC_SCAN_COMM_ERR,
+
+
+	EC_CODE_LAST,
+};
+
+typedef enum EventCodes EVENTCODE;
+
+//----------------------------------------------------------------------------------------------------------------------
+
+class CEventLogFile : public CMyLogFile 
+{
+public:
+	CEventLogFile(void) {};
+	virtual ~CEventLogFile(void) {};
+};
+
+//----------------------------------------------------------------------------------------------------------------------
+
+int InitEventCode(void);
+int TerminateEventCode(void);
+
+int SetCheckEventCode(int nCode, BOOL bHappen);
+int SetEventCode(int nCode);
+int GetEventCode(int nCode);
+int GetCondition(void);
+void ClearEventCode(int nDevice);
+int GetAlarmCount(void);
+int GetAlaramInfo(char *pData);
+
+
